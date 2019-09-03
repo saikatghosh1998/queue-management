@@ -17,6 +17,7 @@ def token(request):
         x,y = script.calll()
        
         context = {'token': x,'phone':phone,'purpose': purpose,'after':y}
+        
     return render(request,'queue_app/token_page.html',context)
 
 
@@ -38,3 +39,18 @@ def home(request):
 
 
     return render(request,'queue_app/index.html')
+
+
+def staff(request):    
+    x = script.count()
+    context = {'next':x}
+    return render(request,'queue_app/staff.html',context)
+
+
+def nextone(request):
+    x = script.next()
+    context = {'next': x}
+    
+    return render(request,'queue_app/staff.html',context)
+
+

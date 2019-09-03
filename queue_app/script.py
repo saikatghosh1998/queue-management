@@ -2,7 +2,8 @@
 
 class Queue:
     tokenNO=0
-
+    #flag=0
+    total=[]
     def __init__(self):
         self.items = []
     
@@ -20,7 +21,8 @@ class Queue:
         
         
         q.tokenNO+=1
-        return self.tokenNO, q.after(tokenNO);
+        #flag++
+        return self.tokenNO, q.after(tokenNO)
 
     def dequeue(self):
         self.items.pop()
@@ -31,6 +33,8 @@ class Queue:
     def printqueus(self):
         for item in self.items:
             print(item)
+            q.total.append(item)
+            return q.total
     
     def after(self,item):
         s = len(self.items)
@@ -42,3 +46,10 @@ q = Queue()
 
 def calll():
    return q.enqueue(q.tokenNO)
+
+def next():
+    q.dequeue()
+    return q.size
+
+def count():
+    return q.size
