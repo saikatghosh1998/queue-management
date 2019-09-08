@@ -1,6 +1,6 @@
 # QR Code based Queue Management System
 Queue Management System is defined as a set of principles aimed at controlling customer flow and streamlining the queuing experience. 
-It helps us to manage a large crowd in a systematic way where no human interface is needed for normal functioning. Our Queue Management System helps the user to scan a QR code and enter the basic information and enter in the ongoing queue providing him/her a token number and the wait time.
+It helps us to manage a large crowd in a systematic way where no human interface is needed for normal functioning. Our Queue Management System helps the user to scan a QR code and enter the basic information for entering in the ongoing queue providing him/her a token number and the wait time.
   
 ## Setup Instruction
 #### Cloning github repository
